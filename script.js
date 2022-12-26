@@ -84,5 +84,15 @@ function WinnerwinnerChickenDinner(result){
         HumanScore.innerHTML = human;
     }
     
-    //Provjera 5 dobitaka!!!
+    //Provjera 5 dobitaka
+    const resultDiv = document.getElementById("resultDiv");
+
+    if (computer >= 5){
+        resultDiv.innerHTML= "Computer has won! As ususal..."
+        resultDiv.style = "font-size: 50px"
+    }
+    else if (human >= 5){
+        resultDiv.innerHTML= "Human has won! This must be a mistake..."
+        resultDiv.style = "font-size: 50px"
+    }
 }
