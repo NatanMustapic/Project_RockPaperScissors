@@ -6,8 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    table {
+        width:100%;
+    }
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
 <body>
-    
+    <div class="container">
+        <div class="title"><h1>Rock, Paper, Scissors Game</h1></div>
+        <div>
+            <button onclick="playRound('rock', getComputerChoice())">Rock</button>
+            <button onclick="playRound('paper', getComputerChoice())">Paper</button>
+            <button onclick="playRound('scissors', getComputerChoice())">Scissors</button>
+        </div>
+        <div>
+            <p id="output"></p>
+        </div>
+        <div>
+            <h3>Computer: </h1><p id="compScore">0</p>
+            <h3>Human: </h1><p  id="humanScore">0</p>
+            <table id="results">
+                <tr>
+                  <th>Your Choice</th>
+                  <th>Computer Choice</th>
+                  <th>Result</th>
+                </tr>
+        </div>
+    </div>
 
 
 
